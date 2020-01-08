@@ -1,0 +1,20 @@
+:root {
+  --light-blue-color--: #e9f0fd;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+  background-color: #ffffff;
+}
+
+.img {
+  background-color: var(--light-blue-color--);
+}
