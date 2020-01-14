@@ -32,25 +32,48 @@ h1,
 h2 {
   font-family: var(--title-font-stack);
   color: var(--title-color-font);
+  margin: 0;
+  text-align: center;
 }
 
 .navigation,
 .nav-link,
-.logo-link {
+.logo {
   color: var(--black-color-font);
+}
+
+/* CONTAINER */
+.container {
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* NAVBAR */
+.navbar {
+  padding-top: 24px;
+  margin-bottom: 109px;
+}
+
+/* NAVIGATION */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* LOGO */
 .logo {
-  font-size: 30px;
-  line-height: 1.06px;
-  color: var(--title-color-font);
-  font-weight: 300;
-}
-.logo-link {
+  display: inline-flex;
+  align-items: center;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--title-color-font);
+  padding: 10px;
+  font-size: 30px;
+  line-height: 1.06;
+  color: var(--title-color-font);
+  font-weight: 300;
+  margin: 0px;
 }
 .logo-m {
   color: var(--accent-color);
@@ -59,8 +82,10 @@ h2 {
 
 /* NAV-LINK */
 .nav-link {
+  display: inline-block;
   text-decoration: none;
   font-family: var(--title-font-stack);
+  padding: 10px;
 }
 
 .nav-link:hover,
@@ -70,11 +95,20 @@ h2 {
 
 /* SITE-NAV */
 .site-nav {
+  display: flex;
+  align-content: center;
   list-style: none;
   font-family: var(--primary-font-stack);
   font-weight: 700;
   font-size: 14px;
   font-weight: 0.7px;
+  margin: 0px;
+  padding-left: 0;
+}
+
+/* PRODUCTS-SECTION */
+.products-section {
+  margin-bottom: 103px;
 }
 
 /* PRODUCTS-TITLE */
@@ -83,6 +117,16 @@ h2 {
   font-weight: 900;
   font-size: 48px;
   line-height: 0.66;
+  margin-bottom: 84px;
+}
+
+/* PRODUCTS-LIST */
+.products-list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 /* PRODUCTS-ING */
@@ -130,6 +174,7 @@ h2 {
 }
 /* PRODUCTS-LINK */
 .products-link {
+  display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -155,9 +200,12 @@ h2 {
   font-weight: 900;
   font-size: 48px;
   line-height: 0.66;
+  margin-bottom: 119px;
 }
 
 .title-news-list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -193,6 +241,17 @@ h2 {
   line-height: 1.44;
   font-weight: 600;
 }
+
+.news-information, .news-library {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.news-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* .test:hover,
 .test:focus {
   background-color: var(--accent-color);
