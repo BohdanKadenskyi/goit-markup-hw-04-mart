@@ -109,6 +109,9 @@ body {
   padding-left: 0;
 }
 
+.products-section{
+  margin-bottom: 103px;
+}
 /* PRODUCTS-TITLE */
 .products-title {
   text-transform: uppercase;
@@ -215,9 +218,9 @@ body {
 
 /* NEW-SECTION */
 .news-section {
-  padding-top: 103px;
-  padding-bottom: 47px;
+  margin-bottom: 47px;
 }
+
 /* TITLE-NEWS */
 .title-news {
   text-transform: uppercase;
